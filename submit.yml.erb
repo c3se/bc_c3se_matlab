@@ -1,0 +1,14 @@
+<%-
+  base_slurm_args = []
+  slurm_args = base_slurm_args
+-%>
+---
+batch_connect:
+  template: "basic"
+  conn_params:
+    - matlab_api
+script:
+  native:
+    <%- slurm_args.each do |arg| %>
+    - "<%= arg %>"
+    <%- end %>

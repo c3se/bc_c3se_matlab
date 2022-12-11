@@ -1,0 +1,15 @@
+---
+form:
+  - cluster
+  - bc_account
+  - bc_num_hours
+  - node_type
+  - working_dir
+  - bc_email_on_started
+attributes:
+  working_dir:
+    label: "Working Directory"
+    data-filepicker: true
+    data-target-file-type: dirs  # Valid values are: files, dirs, or both
+    readonly: false
+    help: "Select your working directory; defaults to $HOME"
