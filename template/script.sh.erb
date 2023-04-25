@@ -3,8 +3,17 @@
 # Benchmark info
 echo "TIMING - Starting main script at: $(date)"
 
-module load MATLAB
-module load matlab-proxy
+if [[ -z "${MATLAB_MODULE_VERSION}" ]]; then
+  module load MATLAB
+else
+  module load MATLAB/"${MATLAB_MODULE_VERSION}"
+fi
+
+if [[ -z "${MATLABPROXY_MODULE_VERSION}" ]]; then
+  module load matlab-proxy
+else
+  module load matlab-proxy/"${MATLABPROXY_MODULE_VERSION}"
+fi
 
 # Yes, really leave me empty since I read everything
 # from the environment

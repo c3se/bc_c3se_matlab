@@ -26,6 +26,20 @@ Clone the app, customize the form and scripts to your liking and deploy as an ap
 
 `main` branch of kept "neutral" of site specific customizations.
 
+## Customizations
+You can set which versions of `MATLAB` and `matlab-proxy` is used by setting
+the following variables in `~/portal/matlabproxy/matlabproxy.sh`.
+
+You can find configuration examples in `/apps/portal/matlabproxy` on Alvis.
+
+```
+$ MATLAB_MODULE_VERSION= # See versions by running module spider MATLAB
+$ MATLABPROXY_MODULE_VERSION= # See versions by running module spider matlab-proxy
+```
+
+Please note that not all variations of `MATLAB` and `matlab-proxy` has been tested.
+
+
 ## Contributing
 
 1. Fork it ( <https://github.com/c3se/bc_c3se_matlab/fork> )
