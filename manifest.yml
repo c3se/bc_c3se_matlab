@@ -6,4 +6,4 @@ role: batch_connect
 description: |
   This app will launch a [matlab-proxy] server
 
-  [MATLAB]: https://github.com/mathworks/matlab-proxy
+  [matlab-proxy]: https://github.com/mathworks/matlab-proxy
