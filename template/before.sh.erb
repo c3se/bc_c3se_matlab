@@ -32,6 +32,9 @@ port=$(find_port)
 # Generate SHA1 encrypted password
 password="$(create_passwd 16)"
 
+# Get grafana link
+job_stats_link=$(job_stats.py $SLURM_JOB_ID)
+
 # Working directory
 <%
 # Set our working directory.
